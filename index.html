@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="input">
+            <input type="text" id="input" placeholder="0">
+        </div>
+
+        <div class="allbuttons">
+            <div class="buttons">
+                <button onclick="clearBtn(this)" class="operator">AC</button>
+            <button onclick="deleteBtn(this)" class="operator">DEL</button>
+            <button onclick="getOperator(this)" class="operator">%</button>
+            <button onclick="getOperator(this)" class="operator">/</button>
+            </div>
+
+        <div class="buttons">
+            <button onclick="getButton(this)">7</button>
+            <button onclick="getButton(this)">8</button>
+            <button onclick="getButton(this)">9</button>
+            <button onclick="getOperator(this)" class="operator">*</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="getButton(this)">4</button>
+            <button onclick="getButton(this)">5</button>
+            <button onclick="getButton(this)">6</button>
+            <button onclick="getOperator(this)" class="operator">-</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="getButton(this)">1</button>
+            <button onclick="getButton(this)">2</button>
+            <button onclick="getButton(this)">3</button>
+            <button onclick="getOperator(this)" class="operator">+</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="getButton(this)">00</button>
+            <button onclick="getButton(this)">0</button>
+            <button class="operator" onclick="getOperator(this)" >.</button>
+            <button class="equal-btn" onclick="getResult(this)" >=</button>
+        </div>
+    
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
